@@ -7,7 +7,10 @@
         "Email":"#email_address",
         "password":"#password",
         "confirmPass":"#confirmation",
-        "RegisterBtn":".buttons-set > .button"
+        "RegisterBtn":".buttons-set > .button",
+        "SuccessMsg" :".success-msg > ul > li",
+        "ErrorMsg" :".error-msg > ul > li"
+        
         
         
     }

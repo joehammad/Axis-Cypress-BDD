@@ -3,31 +3,53 @@ import {registraion} from "../PageActions/RegisterActions"
 
 const RegisterActions = new registraion
 
-Given('user visits Tealium',()=>{
-    cy.visit('https://ecommerce.tealiumdemo.com/')
-})
+let userData;
 
-When('user Navigate to Regsiter',()=>{
-    RegisterActions.clickAccount(),
-    RegisterActions.clickRegister()
-})
-Then('User Adds First Name',()=>{
-    RegisterActions.setFirstName('test')
-})
-And('User Adds last Name',()=>{
-    RegisterActions.setLastName('test')
-})
+before(() => {
+  // Load the fixture data before the tests run
+  cy.fixture('users').then((users) => {
+    userData = users[0]; // Use the first user from the list or choose another index if needed
+  });
+});
 
-And('User Adds Email',()=>{
-    RegisterActions.setEmail('joehammad4@gmail.com')
-})
+Given('user visits Tealium', () => {
+  cy.visit('https://ecommerce.tealiumdemo.com/');
+});
 
-And('User Adds password',()=>{
-    RegisterActions.setPassword("12345678")
-})
-And ('User Confirms password',()=>{
-    RegisterActions.confirmPassword("12345678")
-})
-Then ('User Click register',()=>{
-    RegisterActions.submit()
-})
+When('user navigates to Register', () => {
+  RegisterActions.clickAccount();
+  RegisterActions.clickRegister();
+});
+
+Then('User adds First Name', () => {
+  RegisterActions.setFirstName(userData.firstName);
+});
+
+And('User adds Last Name', () => {
+  RegisterActions.setLastName(userData.lastName);
+});
+
+And('User adds Email', () => {
+  RegisterActions.setEmail(userData.email);
+});
+
+And('User adds Password', () => {
+  RegisterActions.setPassword(userData.password);
+});
+
+And('User confirms Password', () => {
+  RegisterActions.confirmPassword(userData.password);
+});
+
+Then('User clicks Register', () => {
+  RegisterActions.submit();
+  cy.wait(2000);
+});
+
+Then('Success message should appear', () => {
+  RegisterActions.SuccessMessage();
+});
+
+Then('Error message should appear', () => {
+  RegisterActions.ErrorMessage();
+});

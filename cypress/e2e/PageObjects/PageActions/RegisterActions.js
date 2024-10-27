@@ -36,5 +36,14 @@ confirmPassword(confirmation)
 }
 submit(){
     cy.get(registerLocators.regsiter.RegisterBtn).click()
+    
+    
+}
+
+SuccessMessage(){
+    cy.get(registerLocators.regsiter.SuccessMsg).should('exist');
+}
+ErrorMessage(){
+    cy.get(registerLocators.regsiter.ErrorMsg).should('exist');
 }
 }
