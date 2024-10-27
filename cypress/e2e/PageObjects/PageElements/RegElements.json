@@ -1,0 +1,15 @@
+{
+
+    "regsiter":{
+        
+        "firstName": "#firstname",
+        "lastName":"#lastname",
+        "Email":"#email_address",
+        "password":"#password",
+        "confirmPass":"#confirmation",
+        "RegisterBtn":".buttons-set > .button"
+        
+        
+    }
+    
+}

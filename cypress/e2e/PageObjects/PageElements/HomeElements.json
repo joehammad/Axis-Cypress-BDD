@@ -1,0 +1,8 @@
+{
+    "Homelocators":{
+
+        "account" :".skip-account > .label" ,
+        "Register" :"#header-account > .links > ul > :nth-child(5) > a"
+    }
+   
+}
