@@ -1,35 +1,35 @@
 const registerLocators = require ("../PageElements/RegElements.json")
 const home = require ("../PageElements/HomeElements.json")
 
-export class regestraion {
+export class registraion {
 clickAccount(){
 cy.get(home.Homelocators.account).click()
 }
-clickRegester(){
-    cy.get(home.Homelocators.Register)
+clickRegister(){
+    cy.get(home.Homelocators.Register).click()
 }
 
-setFirstName()
+setFirstName(FirstName)
 {
     cy.get(registerLocators.regsiter.firstName).type(FirstName)
     return
 }
-setLastName()
+setLastName(LastName)
 {
     cy.get(registerLocators.regsiter.lastName).type(LastName)
     return
 }
-setEmail()
+setEmail(Email)
 {
     cy.get(registerLocators.regsiter.Email).type(Email)
     return
 }
-setPassword()
+setPassword(password)
 {
     cy.get(registerLocators.regsiter.password).type(password)
     return
 }
-confirmPassword()
+confirmPassword(confirmation)
 {
     cy.get(registerLocators.regsiter.confirmPass).type(confirmation)
     return
