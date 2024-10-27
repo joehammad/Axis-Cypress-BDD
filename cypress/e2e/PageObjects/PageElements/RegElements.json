@@ -9,7 +9,7 @@
         "confirmPass":"#confirmation",
         "RegisterBtn":".buttons-set > .button",
         "SuccessMsg" :".success-msg > ul > li",
-        "ErrorMsg" :".error-msg > ul > li"
+        "ErrorMsg" :"#advice-required-entry-password"
         
         
         

@@ -8,7 +8,10 @@ let userData;
 before(() => {
   // Load the fixture data before the tests run
   cy.fixture('users').then((users) => {
-    userData = users[0]; // Use the first user from the list or choose another index if needed
+     // Randomly select a user from the list
+     const randomIndex = Math.floor(Math.random() * users.length);
+     userData = users[randomIndex];
+ 
   });
 });
 
@@ -16,40 +19,40 @@ Given('user visits Tealium', () => {
   cy.visit('https://ecommerce.tealiumdemo.com/');
 });
 
-When('user navigates to Register', () => {
+When('user Navigate to Regsiter', () => {
   RegisterActions.clickAccount();
   RegisterActions.clickRegister();
 });
 
-Then('User adds First Name', () => {
+Then('User Adds First Name', () => {
   RegisterActions.setFirstName(userData.firstName);
 });
 
-And('User adds Last Name', () => {
+And('User Adds last Name', () => {
   RegisterActions.setLastName(userData.lastName);
 });
 
-And('User adds Email', () => {
+And('User Adds Email', () => {
   RegisterActions.setEmail(userData.email);
 });
 
-And('User adds Password', () => {
+And('User Adds password', () => {
   RegisterActions.setPassword(userData.password);
 });
 
-And('User confirms Password', () => {
+And('User Confirms password', () => {
   RegisterActions.confirmPassword(userData.password);
 });
 
-Then('User clicks Register', () => {
+Then('User Click register', () => {
   RegisterActions.submit();
   cy.wait(2000);
 });
 
-Then('Success message should appear', () => {
+Then('success message should appears', () => {
   RegisterActions.SuccessMessage();
 });
 
-Then('Error message should appear', () => {
+Then('Error message should appears', () => {
   RegisterActions.ErrorMessage();
 });
