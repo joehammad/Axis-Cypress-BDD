@@ -12,27 +12,27 @@ clickRegister(){
 setFirstName(FirstName)
 {
     cy.get(registerLocators.regsiter.firstName).type(FirstName)
-    return
+    
 }
 setLastName(LastName)
 {
     cy.get(registerLocators.regsiter.lastName).type(LastName)
-    return
+    
 }
 setEmail(Email)
 {
     cy.get(registerLocators.regsiter.Email).type(Email)
-    return
+    
 }
 setPassword(password)
 {
     cy.get(registerLocators.regsiter.password).type(password)
-    return
+    
 }
 confirmPassword(confirmation)
 {
     cy.get(registerLocators.regsiter.confirmPass).type(confirmation)
-    return
+    
 }
 submit(){
     cy.get(registerLocators.regsiter.RegisterBtn).click()
@@ -40,10 +40,10 @@ submit(){
     
 }
 
-SuccessMessage(){
+successAssertion(){
     cy.get(registerLocators.regsiter.SuccessMsg).should('exist');
 }
-ErrorMessage(){
+errorAsserstion(){
     cy.get(registerLocators.regsiter.ErrorMsg).should('exist');
 }
 }

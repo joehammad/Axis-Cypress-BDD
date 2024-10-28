@@ -50,9 +50,9 @@ Then('User Click register', () => {
 });
 
 Then('success message should appears', () => {
-  RegisterActions.SuccessMessage();
+  RegisterActions.successAssertion();
 });
 
 Then('Error message should appears', () => {
-  RegisterActions.ErrorMessage();
+  RegisterActions.errorAsserstion();
 });

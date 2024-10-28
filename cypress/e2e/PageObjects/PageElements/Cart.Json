@@ -6,7 +6,9 @@
          "product":":nth-child(1) > .product-info > .actions > .button",
          "color":".swatch-label > img",
          "size":"#swatch101 > .swatch-label",
-         "addToCart":".add-to-cart-buttons > .button"
+         "addToCart":".add-to-cart-buttons > .button",
+         "succsessMsg":".success-msg > ul > li"
+         
          
 
 

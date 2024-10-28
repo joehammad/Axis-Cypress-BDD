@@ -44,7 +44,7 @@ before(() => {
     cart.clickShoes()
   })
   Then('user Select sort dropDown',()=>{
-    cart.sort()
+    cart.sortByPrice()
    
   })
 
@@ -57,8 +57,11 @@ Then('user select color',()=>{
 cart.selectColor()
 })
 Then('user select size',()=>{
-    cart.SelectSize()
+    cart.selectSize()
     })
 Then('user add the product to cart',()=>{
-    cart.toCart()
+    cart.addToCart()
+})
+Then('success message should appears',()=>{
+  cart.successAssesrtion()
 })

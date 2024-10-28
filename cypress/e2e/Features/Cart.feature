@@ -13,3 +13,4 @@ Then user Select sort dropDown
  Then user select color
  Then user select size
 Then user add the product to cart
+Then success message should appears

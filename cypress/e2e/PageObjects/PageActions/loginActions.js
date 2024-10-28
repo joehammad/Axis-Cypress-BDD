@@ -12,16 +12,16 @@ clickLogin(){
 }
 setEmail(Email){
     cy.get(login.loginLocators.email).type(Email)
-    return
+    
 }
 setPassword (Password){
     cy.get(login.loginLocators.password).type(Password)
-    return
+    
 }
 loginBtn(){
     cy.get(login.loginLocators.loginBtn).click()
 }
-ErrorMessage(){
+errorAsserstion(){
     cy.get(login.loginLocators.ErrorMsgElement).should('exist');
 }
 }

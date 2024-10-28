@@ -40,5 +40,5 @@ before(() => {
     LoginTest.loginBtn();
   })
   Then('Error message should appears', () => {
-    LoginTest.ErrorMessage();
+    LoginTest.errorAsserstion();
   });
