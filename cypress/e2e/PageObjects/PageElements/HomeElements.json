@@ -3,7 +3,12 @@
 
         "account" :".skip-account" ,
         "Register" :"#header-account > .links > ul > :nth-child(5) > a",
-        "login": "#header-account > .links > ul > .last > a"
+        "login": "#header-account > .links > ul > .last > a",
+        "Accessories" : ".nav-3 > .has-children",
+        "shoes" :"li.level1.nav-3-3 > a.level1"
+
+
+        
     }
    
 }

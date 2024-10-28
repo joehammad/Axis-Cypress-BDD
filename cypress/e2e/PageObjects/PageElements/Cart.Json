@@ -1,0 +1,17 @@
+{
+    "Accessories":{
+
+        "SortDropdown" :".category-products > :nth-child(1) > .sorter > .sort-by > select" ,
+         "Price": "option[value='https://ecommerce.tealiumdemo.com/accessories/shoes.html?dir=asc&order=price']",
+         "product":":nth-child(1) > .product-info > .actions > .button",
+         "color":".swatch-label > img",
+         "size":"#swatch101 > .swatch-label",
+         "addToCart":".add-to-cart-buttons > .button"
+         
+
+
+
+        
+    }
+   
+}
