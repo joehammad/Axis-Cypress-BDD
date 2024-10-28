@@ -1,0 +1,11 @@
+{
+    "loginLocators":{
+
+        "email" :"#email" ,
+        "password" :"#pass",
+        "loginBtn": "#send2",
+        "ErrorMsgElement":".error-msg > ul > li"
+        
+    }
+   
+}

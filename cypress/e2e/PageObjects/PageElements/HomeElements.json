@@ -2,7 +2,8 @@
     "Homelocators":{
 
         "account" :".skip-account" ,
-        "Register" :"#header-account > .links > ul > :nth-child(5) > a"
+        "Register" :"#header-account > .links > ul > :nth-child(5) > a",
+        "login": "#header-account > .links > ul > .last > a"
     }
    
 }
