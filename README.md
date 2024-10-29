@@ -52,3 +52,8 @@ To run tests in the Cypress Test Runner:
 ```bash
 npx cypress open
 ```
+## Report 
+
+```bash
+npm run test
+```
