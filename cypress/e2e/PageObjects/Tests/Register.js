@@ -32,7 +32,7 @@ And('User Adds last Name', () => {
   RegisterActions.setLastName(userData.lastName);
 });
 
-And('User Adds Email', () => {
+And('User Adds an Email', () => {
   RegisterActions.setEmail(userData.email);
 });
 
@@ -53,6 +53,6 @@ Then('success message should appears', () => {
   RegisterActions.successAssertion();
 });
 
-Then('Error message should appears', () => {
+Then('Error should appears', () => {
   RegisterActions.errorAsserstion();
 });

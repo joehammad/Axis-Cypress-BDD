@@ -10,8 +10,8 @@ clickAccount(){
 clickLogin(){
     cy.get(home.Homelocators.login).click()
 }
-setEmail(Email){
-    cy.get(login.loginLocators.email).type(Email)
+setEmail(email){
+    cy.get(login.loginLocators.email).type(email)
     
 }
 setPassword (Password){
