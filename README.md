@@ -2,7 +2,7 @@
 
 This repository contains a Cypress test automation framework for an e-commerce application, designed using Behavior-Driven Development (BDD) principles with Gherkin syntax. The tests cover registration, login, and adding items to the cart with both positive and negative scenarios.
 
-## Project Structure
+## Project Structure:
 
 - **Features**: Contains `.feature` files with Gherkin syntax for each test scenario.
   - `Register.feature`: Tests for user registration.
