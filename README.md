@@ -43,7 +43,10 @@ Clone the repository and install the dependencies:
 ```bash
 git clone https://github.com/joehammad/Axis-Cypress-BDD.git
 cd Axis-Cypress-BDD
-npm install 
+npm install --save-dev cypress
+npm install --save-dev cypress-cucumber-preprocessor
+npm install --save-dev cypress-mochawesome-reporter
+
 ```
 ## Running the Tests
 Interactive Mode
